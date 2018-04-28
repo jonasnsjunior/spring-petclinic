@@ -10,7 +10,7 @@ pipeline {
     stage('Java') {
       steps {
         sh 'echo $JAVA_HOME'
-        sh './mvnw check'
+        sh './mvnw verify'
       }
     }
     stage('run') {
